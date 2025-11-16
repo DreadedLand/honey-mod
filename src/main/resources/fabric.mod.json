@@ -1,41 +1,25 @@
 {
-	"schemaVersion": 1,
-	"id": "honey-craft",
-	"version": "${version}",
-	"name": "honey-craft",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"correctious"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/honey-craft/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"com.correctious.honeycraft.Honeycraft"
-		],
-		"client": [
-			"com.correctious.honeycraft.HoneycraftClient"
-		]
-	},
-	"mixins": [
-		"honey-craft.mixins.json",
-		{
-			"config": "honey-craft.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.17.3",
-		"minecraft": "~1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "honey_mod",
+  "version": "1.0.0",
+  "name": "Honey Mod",
+  "description": "Adds a honey block crafting recipe",
+  "authors": [
+    "DreadedLand"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/honey_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dreadedlands.honey_mod.HoneyMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
